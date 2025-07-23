@@ -1,0 +1,175 @@
+/*=============== Portfolio Section Titles ===============*/
+.section__title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: 1rem;
+  color: #888;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/*=============== Portfolio Filters ===============*/
+.work__filters {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.work__item {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+  border: 2px solid transparent;
+}
+
+.work__item:hover {
+  background-color: #f0f0f0;
+}
+
+.work__item.active-work {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+/*=============== Portfolio Grid (matches .cert__content) ===============*/
+.work__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.75rem;
+  row-gap: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/*=============== Portfolio Card (matches .cert__box) ===============*/
+.work__card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: left;
+}
+
+/*=============== Image Styling (matches .cert__img) ===============*/
+.work__img {
+  border-radius: 0.25rem;
+  width: 100%;
+  max-height: 993px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+
+/*=============== Text Styling (similar to .cert__name, .cert__platform) ===============*/
+.work__title {
+  font-size: 17px;
+  padding-left: 0.5rem;
+  padding-top: 1rem;
+}
+
+.work__platform {
+  font-size: 13px;
+  padding-top: 0.25rem;
+  padding-left: 0.5rem;
+}
+
+/*=============== Responsive Breakpoints ===============*/
+@media screen and (max-width: 992px) {
+  .work__container {
+    grid-template-columns: repeat(4, 1fr);
+        column-gap: 0.75rem;
+        row-gap: 1rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .work__title {
+    font-size: 16px;
+  }
+
+  .work__platform {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work__container {
+    grid-template-columns: repeat(2, 1fr);
+        column-gap: 0.5rem;
+        row-gap: 1rem;
+        padding-left: 1.25rem ;
+        padding-right: 1.25rem ;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .work__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.75rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .work__container {
+    grid-template-columns: 1fr;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .work__title {
+    font-size: 13px;
+  }
+
+  .work__platform {
+    font-size: 10px;
+  }
+}
+
+/*=============== View More Card ===============*/
+.view-more__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px dashed #ccc;
+}
+
+.view-more__card:hover {
+  border-color: #000;
+  background-color: #f8f8f8;
+}
+
+.view-more__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.view-more__plus {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.view-more__text {
+  font-size: 1rem;
+  color: #000;
+  font-weight: 600;
+}
