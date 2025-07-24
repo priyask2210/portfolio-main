@@ -63,59 +63,11 @@ Designed and deployed modern, minimal, and user-focused UI components
                     </div>
                 </div>
 
-                <div className='services__content'>
-                    <div>
-                        <i className='class=uil uil-web-grid services__icon'></i>
-                        <h3 className='services__title'>UI/UX<br />Designer</h3>
-                    </div>
-
-                    <span className='services__button' onClick={() => toggleTab(2)}>View More
-                    <i className='uil uil-arrow-right services-button-icon'></i>
-                    </span>
-
-                    <div className={toggleState === 2 ? "services__modal active-modal" : "services__modal"}>
-                        <div className='services__modal-content'>
-                            <i className='uil uil-times services__modal-close' onClick={() => toggleTab(0)}></i>
-                            <h3 className='services__modal-title'>UI/UX Designer</h3>
-                            <p className='services__modal-description'>Passionate about designing user-centered digital interfaces with a balance of functionality and aesthetics. 
-                                I apply design thinking to craft intuitive and accessible web and mobile experiences that solve real-world problems.</p>
-                            
-                            <ul className='services__modal-services grid'>
-                                <li className='services__modal-service'>
-                                    <i className='uil uil-check-circle services__modal-icon'></i>
-                                    <p className='services__modal-info'>
-Design and prototype wireframes, mockups, and user flows using tools like Figma and Adobe XD                                         
-                                    </p>
-                                </li>
-
-                                <li className='services__modal-service'>
-                                    <i className='uil uil-check-circle services__modal-icon'></i>
-                                    <p className='services__modal-info'>
-Focus on responsive, clean, and consistent visual design tailored for the target audience                                    </p>
-                                </li>
-
-                                <li className='services__modal-service'>
-                                    <i className='uil uil-check-circle services__modal-icon'></i>
-                                    <p className='services__modal-info'>
-Conduct usability testing and iterative feedback loops to enhance user experience                                   </p>
-                                </li>
-
-                                <li className='services__modal-service'>
-                                    <i className='uil uil-check-circle services__modal-icon'></i>
-                                    <p className='services__modal-info'>
-                                        Collaborate with frontend developers to ensure seamless design-to-code handoffs  
-                                    </p>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
 
                 <div className='services__content'>
                     <div>
                         <i className='class=uil uil-robot services__icon'></i>
-                        <h3 className='services__title'>ML/DL<br />Engineer</h3>
+                        <h3 className='services__title'>AI/MLL<br />Engineer</h3>
                     </div>
 
                     <span className='services__button' onClick={() => toggleTab(3)}>View More

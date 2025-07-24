@@ -4,7 +4,7 @@ import React from 'react';
 const Social = () => {
     return (
         <div className='home__social'>
-            <a href='mailto:jesvanth@gmail.com' className='home__social-icon' target='_blank'>
+            <a href='mailto:priyasklakshmi@gmail.com' className='home__social-icon' target='_blank'>
                 <i className='uil uil-envelope'></i>
             </a>
             

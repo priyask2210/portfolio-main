@@ -2,16 +2,14 @@ import React, { useState } from 'react';
 import './Portfolio.css';
 
 
-import cgpa from "../../assets/projectspic/cgpa.png"
-import ldr from "../../assets/projectspic/ldr.png"
 import icdect from "../../assets/projectspic/icdect.png"
 import botnet from "../../assets/projectspic/botnet.png"
 import patent from "../../assets/projectspic/patent.png"
-import dlproj from "../../assets/projectspic/DLproj.png"
 import iotsmart from "../../assets/projectspic/iotsmart.png"
-import traffic1 from "../../assets/projectspic/DLproj1.png"
 import crypto from "../../assets/projectspic/crypto.png"
 import ipl from "../../assets/projectspic/IPL.png"
+import gest from "../../assets/projectspic/gest.jpeg"
+import med from "../../assets/projectspic/med.png"
 
 const Portfolio = () => {
   const [activeTab, setActiveTab] = useState('project');
@@ -28,12 +26,7 @@ const Portfolio = () => {
         >
           Project
         </span>
-        <span
-          className={`work__item ${activeTab === 'paper' ? 'active-work' : ''}`}
-          onClick={() => setActiveTab('paper')}
-        >
-          Research Paper
-        </span>
+       
       </div>
 
       <div className="work__container container grid">
@@ -42,7 +35,7 @@ const Portfolio = () => {
           <>
             <div className="work__card">
               <a href="https://github.com/Jesvanth/Voice-Style-Transfer-Deep-Learning-Project" target="_blank" rel="noreferrer">
-              <img src={traffic1} alt='AI' className='cert__img' />
+              <img src={gest} alt='AI' className='cert__img' />
                 <h3 className="work__title">Gesture Vocalizer Device</h3>
                 <p className='cert__platform'>Arduino and flexsensors</p>
               </a>
@@ -67,17 +60,17 @@ const Portfolio = () => {
 
             <div className="work__card">
               <a href="https://github.com/Jesvanth/Network-Security-Cryptography-Project" target="_blank" rel="noreferrer">
-                <img src={crypto} alt='AI' className='cert__img' />
-                <h3 className="work__title">Network Vulnerability Scanner</h3>
-                <p className='cert__platform'>Python, Machine Learning, Nmap, OpenVAS, Nessus, Acunetix, Cryptography, Network Security</p>
+                <img src={med} alt='AI' className='cert__img' />
+                <h3 className="work__title">Alternative Medicine Recommendation System</h3>
+                <p className='cert__platform'>Python, Machine Learning, Artificial Intelligence</p>
               </a>
             </div>
 
             <div className="work__card">
               <a href="https://github.com/Jesvanth/IPL-Score-Prediction-Visualization-EDA-Project" target="_blank" rel="noreferrer">
                 < img src={ipl} alt='AI' className='cert__img' />
-                <h3 className="work__title">IPL Score Prediction & Visualization (EDA Project)</h3>
-                <p className='cert__platform'>Python, Machine Learning, EDA, Visualization, Prediction</p>
+                <h3 className="work__title">Music Genre Classification</h3>
+                <p className='cert__platform'>Python, Machine Learning, EDA, Visualization, Prediction, Streamlit</p>
               </a>
             </div>
 

@@ -26,11 +26,8 @@ const Footer = () => {
                 <i className='bx bxl-linkedin'></i>
             </a>
 
-            <a href='https://api.whatsapp.com/send?phone=917358805261&text=Hello!' className='footer__social-link' target='_blank'>
-                <i className='bx bxl-whatsapp'></i>
-            </a>
             
-            <a href='https://www.instagram.com/jesvanthhh/' className='footer__social-link' target='_blank'>
+            <a href='www.instagram.com' className='footer__social-link' target='_blank'>
                 <i className='bx bxl-instagram'></i>
             </a>
             

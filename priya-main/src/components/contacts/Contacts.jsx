@@ -41,7 +41,7 @@ const Contacts = () => {
               <h3 className='contact__card-title'>Email</h3>
               <span className='contact__card-data'>priyasklakshmi@gmail.com</span>
               <a
-                href='mailto:jesvanth@gmail.com'
+                href='mailto:priyasklakshmi@gmail.com'
                 className='contact__button'
               >
                 Write me
@@ -81,8 +81,7 @@ const Contacts = () => {
         <div className='contact__content'>
           <h3 className='contact__title'>Write me your thoughts</h3>
 
-          <form action="https://formsubmit.co/priyasklakshmi@gmail.com" method="POST" Add commentMore actions
-          className='contact__form'>
+      <form ref={form} onSubmit={sendEmail} className='contact__form'>
             <div className='contact__form-div'>
               <label className='contact__form-tag'>Name</label>
               <input

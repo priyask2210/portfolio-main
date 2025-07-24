@@ -1,6 +1,5 @@
 import React from 'react';
-import "./about.css";
-import AboutImg from "../../assets/Priyacrop.jpg"; // ✅ correct relative path
+import "./about.css"; // ✅ correct relative path
 import Info from "./Info";
 
 const About = () => {
